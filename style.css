@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+body {
+    background-color: rgb(224, 224, 224);
+}
+.menu {
+    display: flex;
+    background-color: rgb(130, 130, 130);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
