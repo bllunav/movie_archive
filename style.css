@@ -8,13 +8,11 @@ body {
     background-color: rgb(224, 224, 224);
 }
 header {
-    display: flex;
-    position: fixed;
-    z-index: 100;
+    width: 100%;
 }
 .menu {
     display: flex;
-    width: 100%;
+    width: 91%;
     background-color: rgb(130, 130, 130);
     align-items: center;
     justify-content: space-between;
@@ -36,7 +34,6 @@ header {
 .ham-menu {
     display: none;
     flex-direction: column;
-    /* justify-content: flex-start; */
     align-items: center;
     height: 100vh;
     width: 230px;
@@ -64,9 +61,71 @@ header {
 .ham-menu a:hover, .ham-menu svg:hover {
     background-color: rgb(90, 90, 90);
 }
-h1 {
+.genre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.genre p {
     display: flex;
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding-top: 80px;
+    font-weight: 400;
+}
+.movie-genre {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    align-items: center;
+    justify-content: center;
+}
+.horror {
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+.thriller {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+.sci {
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+.comedy {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+.romance {
+    display: flex;
+    grid-column: 1;
+    grid-row: 3;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+.action {
+    display: flex;
+    grid-column: 2;
+    grid-row: 3;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
 }
