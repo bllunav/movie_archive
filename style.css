@@ -1,3 +1,63 @@
+@media(min-width: 650px){
+.menu {
+    height: 60px;
+    border-radius: 15px;
+    background-color: rgba(130, 130, 130, 0.2);
+    backdrop-filter: blur(19px);
+    margin-top: 20px;
+}
+.links {
+    gap: 35px;
+}
+.links button {
+    display: none;
+}
+.links a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+#login {
+    display: none;
+}
+.tools {
+    gap: 25px;
+}
+.genre p {
+    padding-top: 60px;
+}
+.movie-genre {
+    gap: 30px 35px;
+}
+.horror, .thriller, .comedy, .action, .romance, .sci {
+    width: 350px;
+    height: 350px;
+}
+}
+@font-face {
+    font-family: 'horror';
+    src: url(fonts/horror/Nightcore\ Demo.ttf);
+}
+@font-face {
+    font-family: 'thriller';
+    src: url(fonts/thriller/horroroidbold.ttf);
+}
+@font-face {
+    font-family: 'comedy';
+    src: url(fonts/comedy/ComedyCartoonDemoRegular.ttf);
+}
+@font-face {
+    font-family: 'sci';
+    src: url(fonts/sci-fi/exotic\ stencil\ army.ttf);
+}
+@font-face {
+    font-family: 'action';
+    src: url(fonts/action/Adventure.otf);
+}
+@font-face {
+    font-family: 'romance';
+    src: url(fonts/romance/Magic\ Romance\ Personal\ Use\ Only.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +66,9 @@
 }
 body {
     background-color: rgb(224, 224, 224);
+}
+html {
+    scroll-behavior: smooth;
 }
 header {
     display: flex;
@@ -20,13 +83,22 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px 10px 20px;
-    position: fixed;
     z-index: 100;
 }
 .links {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.links a {
+    display: none;
+}
+.links button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
 }
 .tools {
     display: flex;
@@ -41,6 +113,8 @@ header {
     height: 100vh;
     width: 230px;
     background-color: rgb(179, 179, 179);
+    position: absolute;
+    z-index: 150;
 }
 .ham-menu a {
     display: flex;
@@ -50,15 +124,8 @@ header {
     height: 40px;
     font-size: 15px;
     text-decoration: none;
+    border-top: solid 1px rgb(130, 130, 130);
     color: rgb(45, 45, 45);
-    transition: 0.3s ease;
-}
-.ham-menu svg {
-    display: flex;
-    width: 100%;
-    padding: 5px 0px 5px 0px;
-    margin-top: 20px;
-    cursor: pointer;
     transition: 0.3s ease;
 }
 .ham-menu a:hover, .ham-menu svg:hover {
@@ -75,7 +142,7 @@ header {
     justify-content: center;
     color: rgb(0, 0, 0);
     font-size: 20px;
-    padding-top: 90px;
+    padding-top: 30px;
     font-weight: 400;
 }
 .movie-genre {
@@ -104,12 +171,14 @@ header {
     height: 100%;
     object-fit: cover;
     position: relative;
-    transition: 0.3s ease;
+    transition: 0.45s ease;
 }
 .horror p {
     display: flex;
     color: white;
     position: absolute;
+    font-family: 'horror';
+    font-size: 23px;
 }
 .thriller {
     display: flex;
@@ -130,12 +199,15 @@ header {
     object-fit: cover;
     border-radius: 10px;
     position: relative;
-    transition: 0.3s ease;
+    transition: 0.45s ease;
 }
 .thriller p {
     display: flex;
     color: white;
     position: absolute;
+    font-family: 'thriller';
+    font-size: 23px;
+    letter-spacing: 2px;
 }
 .sci {
     display: flex;
@@ -156,12 +228,14 @@ header {
     object-fit: cover;
     border-radius: 10px;
     position: relative;
-    transition: 0.3s ease;
+    transition: 0.45s ease;
 }
 .sci p {
     display: flex;
     color: white;
     position: absolute;
+    font-family: 'sci';
+    font-size: 23px;
 }
 .comedy {
     display: flex;
@@ -182,12 +256,14 @@ header {
     object-fit: cover;
     border-radius: 10px;
     position: relative;
-    transition: 0.3s ease;
+    transition: 0.45s ease;
 }
 .comedy p {
     display: flex;
     color: white;
     position: absolute;
+    font-family: 'comedy';
+    font-size: 23px;
 }
 .romance {
     display: flex;
@@ -208,12 +284,14 @@ header {
     object-fit: cover;
     border-radius: 10px;
     position: relative;
-    transition: 0.3s ease;
+    transition: 0.45s ease;
 }
 .romance p {
     display: flex;
     color: white;
     position: absolute;
+    font-family: 'romance';
+    font-size: 15px;
 }
 .action {
     display: flex;
@@ -234,12 +312,14 @@ header {
     object-fit: cover;
     border-radius: 10px;
     position: relative;
-    transition: 0.3s ease;
+    transition: 0.45s ease;
 }
 .action p {
     display: flex;
     color: white;
     position: absolute;
+    font-family: 'action';
+    font-size: 23px;
 }
 .cover {
     display: flex;
@@ -251,9 +331,30 @@ header {
     position: absolute;
     transition: 0.3s ease;
 }
-.cover:active:focus:hover {
-    opacity: 30%;
+.cover:active, .cover:focus, .cover:hover {
+    opacity: 35%;
 }
-.horror:hover:active:focus img {
-    transform: scale(1.2);
+.horror:active img,
+.thriller:active img,
+.comedy:active img,
+.sci:active img,
+.action:active img,
+.romance:active img {
+    transform: scale(1.15);
+}
+.horror:focus img,
+.thriller:focus img,
+.comedy:focus img,
+.sci:focus img,
+.action:focus img,
+.romance:focus img {
+    transform: scale(1.15);
+}
+.horror:hover img,
+.thriller:hover img,
+.comedy:hover img,
+.sci:hover img,
+.action:hover img,
+.romance:hover img {
+    transform: scale(1.15);
 }
