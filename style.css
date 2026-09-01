@@ -254,11 +254,6 @@ header {
 .cover:active:focus:hover {
     opacity: 30%;
 }
-.horror:hover:active:focus img,
-.thriller:hover:active:focus img,
-.comedy:hover:active:focus img,
-.sci:hover:active:focus img,
-.action:hover:active:focus img,
-.romance:hover:active:focus img {
+.horror:hover:active:focus img {
     transform: scale(1.2);
 }
