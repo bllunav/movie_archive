@@ -89,17 +89,20 @@ header {
     display: flex;
     grid-column: 1;
     grid-row: 1;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
 }
 .horror img {
     display: flex;
-    width: 120px;
-    height: 120px;
-    border-radius: 10px;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: relative;
     transition: 0.3s ease;
 }
@@ -112,16 +115,20 @@ header {
     display: flex;
     grid-column: 2;
     grid-row: 1;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.thriller img {
-    display: flex;
     width: 120px;
     height: 120px;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     overflow: hidden;
+}
+.thriller img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
     position: relative;
     transition: 0.3s ease;
 }
@@ -134,16 +141,20 @@ header {
     display: flex;
     grid-column: 1;
     grid-row: 2;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.sci img {
-    display: flex;
     width: 120px;
     height: 120px;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     overflow: hidden;
+}
+.sci img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
     position: relative;
     transition: 0.3s ease;
 }
@@ -156,16 +167,20 @@ header {
     display: flex;
     grid-column: 2;
     grid-row: 2;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.comedy img {
-    display: flex;
     width: 120px;
     height: 120px;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     overflow: hidden;
+}
+.comedy img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
     position: relative;
     transition: 0.3s ease;
 }
@@ -178,16 +193,20 @@ header {
     display: flex;
     grid-column: 1;
     grid-row: 3;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.romance img {
-    display: flex;
     width: 120px;
     height: 120px;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     overflow: hidden;
+}
+.romance img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
     position: relative;
     transition: 0.3s ease;
 }
@@ -200,16 +219,20 @@ header {
     display: flex;
     grid-column: 2;
     grid-row: 3;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.action img {
-    display: flex;
     width: 120px;
     height: 120px;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     overflow: hidden;
+}
+.action img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
     position: relative;
     transition: 0.3s ease;
 }
@@ -228,9 +251,14 @@ header {
     position: absolute;
     transition: 0.3s ease;
 }
-.cover:active, .cover:focus, .cover:hover {
+.cover:active:focus:hover {
     opacity: 30%;
 }
-.movie-genre img:active:focus:hover {
-    transform: scale(1.3);
+.horror:hover:active:focus img,
+.thriller:hover:active:focus img,
+.comedy:hover:active:focus img,
+.sci:hover:active:focus img,
+.action:hover:active:focus img,
+.romance:hover:active:focus img {
+    transform: scale(1.2);
 }
