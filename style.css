@@ -289,8 +289,8 @@ header {
 }
 .m1, .m2, .m3, .m4, .m5, .m6, .m7, .m8, .m9, .m10 {
     display: flex;
-    width: 93.6px;
-    height: 140.4px;
+    width: 72px;
+    height: 108px;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
