@@ -102,6 +102,7 @@ header {
     align-items: center;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 .tools {
     display: flex;
@@ -287,7 +288,9 @@ header {
     margin-top: 1rem;
     gap: 10px 5px;
 }
-.m1, .m2, .m3, .m4, .m5, .m6, .m7, .m8, .m9, .m10 {
+.m1, .m2, .m3, .m4, .m5, .m6, .m7, .m8, .m9, .m10, .m11, .m12, .m13, .m14, .m15, .m16, .m17, .m18, .m19, .m20,
+.m21, .m22, .m23, .m24, .m25, .m26, .m27, .m28, .m29, .m30, .m31, .m32, .m33, .m34, .m35, .m36, .m37, .m38, .m39, .m40,
+.m41, .m42, .m43, .m44, .m45, .m46, .m47, .m48, .m49, .m50, .m51, .m52, .m53, .m54, .m55, .m56, .m57, .m58, .m59, .m60 {
     display: flex;
     width: 5rem;
     height: 7.5rem;
@@ -297,7 +300,10 @@ header {
     cursor: pointer;
     overflow: hidden;
 }
-.m1 img, .m2 img, .m3 img, .m4 img, .m5 img, .m6 img, .m7 img, .m8 img, .m9 img, .m10 img {
+.m1 img, .m2 img, .m3 img, .m4 img, .m5 img, .m6 img, .m7 img, .m8 img, .m9 img, .m10 img, .m11 img, .m12 img, .m13 img, .m14 img, .m15 img,
+.m16 img, .m17 img, .m18 img, .m19 img, .m20 img, .m21 img, .m22 img, .m23 img, .m24 img, .m25 img, .m26 img, .m27 img, .m28 img, .m29 img,
+.m30 img, .m31 img, .m32 img, .m33 img, .m34 img, .m35 img, .m36 img, .m37 img, .m38 img, .m39 img, .m40 img, .m41 img, .m42 img, .m43 img,
+.m44 img, .m45 img, .m46 img, .m47 img, .m48 img, .m49 img, .m50 img, .m51 img, .m52 img, .m53 img, .m54 img, .m55 img, .m56 img, .m57 img, .m58 img, .m59 img, .m60 img {
     display: flex;
     width: 100%;
     height: 100%;
@@ -309,7 +315,7 @@ header {
 }
 .m2 {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1; 
 }
 .m3 {
     grid-column: 3;
@@ -318,30 +324,6 @@ header {
 .m4 {
     grid-column: 4;
     grid-row: 1;
-}
-.m5 {
-    grid-column: 1;
-    grid-row: 2;
-}
-.m6 {
-    grid-column: 2;
-    grid-row: 2;
-}
-.m7 {
-    grid-column: 3;
-    grid-row: 2;
-}
-.m8 {
-    grid-column: 4;
-    grid-row: 2;
-}
-.m9 {
-    grid-column: 1;
-    grid-row: 3;
-}
-.m10 {
-    grid-column: 2;
-    grid-row: 3;
 }
 
 /* each movie */
