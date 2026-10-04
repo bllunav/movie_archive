@@ -505,3 +505,6 @@ header {
     width: 100%;
     padding: 0.4rem;
 }
+.fill {
+    height: 200px;
+}
